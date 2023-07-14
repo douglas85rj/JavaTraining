@@ -7,8 +7,12 @@ public class Principal {
 
         meuCarro.anoFabricacao = 2022;
         meuCarro.cor = "branco";
-        meuCarro.fabricante ="Hyundai";
-        meuCarro.modelo ="HB20";
+        meuCarro.fabricante = "Hyundai";
+        meuCarro.modelo = "HB20";
+        meuCarro.proprietario = new Pessoa();
+        meuCarro.proprietario.nome = "Douglas";
+        meuCarro.proprietario.cpf= "111.111.111.11";
+        meuCarro.proprietario.anoNascimento= 1985;
 
         seuCarro.anoFabricacao = 2011;
         seuCarro.cor="verde";
@@ -24,10 +28,12 @@ public class Principal {
         seuCachorro.idade =9;
 
 
-
         System.out.println("Meu Carro");
         System.out.printf("Modelo: %s%n", meuCarro.modelo);
         System.out.printf("Ano: %d%n", meuCarro.anoFabricacao);
+        System.out.printf("Proprietario: %s%n",meuCarro.proprietario.nome );
+        System.out.printf("CPF: %s%n", meuCarro.proprietario.cpf);
+        System.out.printf("Nascimento: %d%n", meuCarro.proprietario.anoNascimento);
 
         System.out.println("------------");
 
