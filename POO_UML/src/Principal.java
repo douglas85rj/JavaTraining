@@ -9,15 +9,18 @@ public class Principal {
         meuCarro.cor = "branco";
         meuCarro.fabricante = "Hyundai";
         meuCarro.modelo = "HB20";
+        meuCarro.valorCompra = 90000;
+
         meuCarro.proprietario = new Pessoa();
         meuCarro.proprietario.nome = "Douglas";
         meuCarro.proprietario.cpf= "111.111.111.11";
         meuCarro.proprietario.anoNascimento= 1985;
 
-        seuCarro.anoFabricacao = 2011;
+        seuCarro.anoFabricacao = 2020;
         seuCarro.cor="verde";
         seuCarro.fabricante ="FIAT";
         seuCarro.modelo = "Uno";
+        seuCarro.valorCompra = 80000;
 
         meuCachorro.raca = "Labrador";
         meuCachorro.tamanho="grande";
@@ -54,6 +57,11 @@ public class Principal {
         System.out.printf("Raça: %s%n", seuCachorro.raca);
         System.out.printf("Tamanho: %s%n",seuCachorro.tamanho);
         System.out.printf("Idade: %d%n", seuCachorro.idade);
+
+
+        meuCarro.calcularValorRevenda();
+        seuCarro.calcularValorRevenda();
+
 
 
             }
