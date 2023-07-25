@@ -5,6 +5,6 @@ Esse repositório foi criado para armazenar projetos baseados na prática, e aco
 
 ## Aprendizados
 
-Esotu relembrando tópicos abordados na minha graduação como (UML e POO), e aprendendo novas tecnologias como Spring e em breve Angular. 
+Estou relembrando tópicos abordados na minha graduação como (UML e POO), e aprendendo novas tecnologias como Spring e em breve Angular. 
 
 <img src="./public_files/UML_CarroPessoa.png" alt="UML_PessoaCarro"/>
