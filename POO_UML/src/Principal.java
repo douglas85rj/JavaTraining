@@ -58,8 +58,16 @@ public class Principal {
         System.out.printf("Tamanho: %s%n",seuCachorro.tamanho);
         System.out.printf("Idade: %d%n", seuCachorro.idade);
 
-        meuCarro.calcularValorRevenda();
-        seuCarro.calcularValorRevenda();
+       double valorRevenda =  meuCarro.calcularValorRevenda();
+
+
+        System.out.printf("Tempo de uso (anos): %d%n",2023 - meuCarro.anoFabricacao);
+        System.out.printf("Valor de revenda: %6.2f%n", valorRevenda);
+
+        System.out.println(meuCarro.calcularValorRevenda());
+
+//        meuCarro.calcularValorRevenda();
+//        seuCarro.calcularValorRevenda();
 
 
             }
