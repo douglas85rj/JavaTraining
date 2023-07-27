@@ -1,26 +1,41 @@
 public class Carro {
 
-String fabricante;
-String modelo;
-String cor;
-int anoFabricacao;
-double valorCompra;
-Pessoa proprietario;
+    String fabricante;
+    String modelo;
+    String cor;
+    int anoFabricacao;
+    double valorCompra;
+    Pessoa proprietario;
 
-double calcularValorRevenda() {
-    int anosUso = 2023 - anoFabricacao;
+    void imprimirResumoDepreciacao() {
+        double valorRevendaMeuCarro = calcularValorRevenda();
+        int tempoDeUsoMeuCarro = calcularTempoDeUsoEmAnos();
 
-    double valorRevenda = valorCompra - (anosUso * 0.15 * valorCompra);
-
-    if (valorRevenda < 0){
-        valorRevenda = 0;
-
+        System.out.printf("Tempo de uso (anos): %d%n", tempoDeUsoMeuCarro);
+        System.out.printf("Valor de revenda: %6.2f%n", valorRevendaMeuCarro);
+    }
+    void imprimirIpva(){
+        System.out.printf("O valor do seu IPVA é : %6.2f%n", calcularIpva());
+    }
+    double calcularIpva(){
+        return calcularValorRevenda() * 0.04;
     }
 
-//    System.out.printf("Tempo de uso (anos): %d%n",anosUso);
-//    System.out.printf("Valor de revenda: %6.2f%n", valorRevenda);
+    int calcularTempoDeUsoEmAnos() {
+        return 2023 - anoFabricacao;
+    }
 
-    return valorRevenda;
-}
+    double calcularValorRevenda() {
+        int anosUso = calcularTempoDeUsoEmAnos();
+
+        double valorRevenda = valorCompra - (anosUso * 0.15 * valorCompra);
+
+        if (valorRevenda < 0) {
+            valorRevenda = 0;
+
+        }
+
+        return valorRevenda;
+    }
 
 }

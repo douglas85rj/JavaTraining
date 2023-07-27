@@ -13,28 +13,28 @@ public class Principal {
 
         meuCarro.proprietario = new Pessoa();
         meuCarro.proprietario.nome = "Douglas";
-        meuCarro.proprietario.cpf= "111.111.111.11";
-        meuCarro.proprietario.anoNascimento= 1985;
+        meuCarro.proprietario.cpf = "111.111.111.11";
+        meuCarro.proprietario.anoNascimento = 1985;
 
         seuCarro.anoFabricacao = 2020;
-        seuCarro.cor="verde";
-        seuCarro.fabricante ="FIAT";
+        seuCarro.cor = "verde";
+        seuCarro.fabricante = "FIAT";
         seuCarro.modelo = "Uno";
         seuCarro.valorCompra = 80000;
 
         meuCachorro.raca = "Labrador";
-        meuCachorro.tamanho="grande";
+        meuCachorro.tamanho = "grande";
         meuCachorro.idade = 7;
 
         seuCachorro.raca = "vira lata";
-        seuCachorro.tamanho="médio";
-        seuCachorro.idade =9;
+        seuCachorro.tamanho = "médio";
+        seuCachorro.idade = 9;
 
 
         System.out.println("Meu Carro");
         System.out.printf("Modelo: %s%n", meuCarro.modelo);
         System.out.printf("Ano: %d%n", meuCarro.anoFabricacao);
-        System.out.printf("Proprietario: %s%n",meuCarro.proprietario.nome );
+        System.out.printf("Proprietario: %s%n", meuCarro.proprietario.nome);
         System.out.printf("CPF: %s%n", meuCarro.proprietario.cpf);
         System.out.printf("Nascimento: %d%n", meuCarro.proprietario.anoNascimento);
 
@@ -48,27 +48,22 @@ public class Principal {
 
         System.out.println("Meu Cachorro");
         System.out.printf("Raça: %s%n", meuCachorro.raca);
-        System.out.printf("Tamanho: %s%n",meuCachorro.tamanho);
+        System.out.printf("Tamanho: %s%n", meuCachorro.tamanho);
         System.out.printf("Idade: %d%n", meuCachorro.idade);
 
         System.out.println("------------");
 
         System.out.println("Seu Cachorro");
         System.out.printf("Raça: %s%n", seuCachorro.raca);
-        System.out.printf("Tamanho: %s%n",seuCachorro.tamanho);
+        System.out.printf("Tamanho: %s%n", seuCachorro.tamanho);
         System.out.printf("Idade: %d%n", seuCachorro.idade);
 
-       double valorRevenda =  meuCarro.calcularValorRevenda();
+        meuCarro.imprimirResumoDepreciacao();
+        meuCarro.imprimirIpva();
+        seuCarro.imprimirResumoDepreciacao();
+        seuCarro.imprimirIpva();
 
 
-        System.out.printf("Tempo de uso (anos): %d%n",2023 - meuCarro.anoFabricacao);
-        System.out.printf("Valor de revenda: %6.2f%n", valorRevenda);
 
-        System.out.println(meuCarro.calcularValorRevenda());
-
-//        meuCarro.calcularValorRevenda();
-//        seuCarro.calcularValorRevenda();
-
-
-            }
     }
+}
