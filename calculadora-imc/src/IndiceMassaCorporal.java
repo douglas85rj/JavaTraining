@@ -4,4 +4,8 @@ public class IndiceMassaCorporal {
     double peso;
     double altura;
 
+    boolean estaComObesidade() {
+        return resultado >= 30;
+    }
+
 }
