@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-	public class caclculaPagamentos {
+	public class calculaPagamentos {
 
 	public static void main(String[]args) {
 

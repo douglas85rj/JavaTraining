@@ -1,5 +1,5 @@
 
-public class Main {
+public class Principal {
 
 	public static void main(String[] args) {
 		String product1 = "computer";
@@ -7,7 +7,7 @@ public class Main {
 
 	
 
-		double price1 = 2100.0;
+		double price1 = 2100.00;
 		double price2 = 650.50;
 	
 

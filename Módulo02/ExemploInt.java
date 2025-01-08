@@ -4,9 +4,9 @@ public static void main (String[]args) {
 
 	int populacaoRio = 699097;
 
-	int populacaoSP = 2147483648;
+	long populacaoSP = 2147483648L;
 
-	System.out.println();
+	System.out.printf("População do Rio: %d, População de SP: %d%n", populacaoRio, populacaoSP);
 
 	}
 

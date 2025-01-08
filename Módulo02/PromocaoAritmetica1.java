@@ -8,7 +8,7 @@ public class PromocaoAritmetica1 {
 	int x =10;
 	long y =5;
 	long z = x*y; //Promoção aritmética declarando um tipo maior(long) no 
-	resultado	
+	
 		
 	System.out.println(z);
 
