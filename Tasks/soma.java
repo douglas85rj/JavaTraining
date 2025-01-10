@@ -16,5 +16,5 @@ public class soma {
         sc.close();
 
     }
-    
+
 }
