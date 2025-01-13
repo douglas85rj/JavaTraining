@@ -18,6 +18,6 @@ public class stringReverse {
         char[] s = {'h', 'e', 'l', 'l', 'o'};
         System.out.println("Original: " + new String(s));
         reverser.reverseString(s);
-        System.out.println("Reversed: " + new String(s));
+        System.out.println("Reverso: " + new String(s));
     }
 }
