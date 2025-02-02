@@ -7,12 +7,13 @@ public class App {
     public static void main(String[] args) throws Exception {
        Locale.setDefault(Locale.US);
          Scanner sc = new Scanner(System.in);
+
        Triangulo x, y;
        x = new Triangulo();
        y = new Triangulo();
 
        System.out.println("Enter the measures of triangle X:");
-       x.a = sc.nextDouble()
+       x.a = sc.nextDouble();
        x.b = sc.nextDouble();
        x.c = sc.nextDouble();
 
@@ -34,6 +35,8 @@ public class App {
             System.out.println("Larger area: X");
         } else {
             System.out.println("Larger area: Y");
+
+            sc.close();
         }
 
     }
