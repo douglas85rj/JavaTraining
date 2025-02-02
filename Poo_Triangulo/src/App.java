@@ -4,23 +4,23 @@ import java.util.Scanner;
 import entities.Triangulo;
 
 public class App {
-    public static void main(String[] args) throws Exception {
-       Locale.setDefault(Locale.US);
-         Scanner sc = new Scanner(System.in);
+    public static void main(String[] args)  {
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
 
-       Triangulo x, y;
-       x = new Triangulo();
-       y = new Triangulo();
+        Triangulo x, y;
+        x = new Triangulo();
+        y = new Triangulo();
 
-       System.out.println("Enter the measures of triangle X:");
-       x.a = sc.nextDouble();
-       x.b = sc.nextDouble();
-       x.c = sc.nextDouble();
+        System.out.println("Enter the measures of triangle X:");
+        x.a = sc.nextDouble();
+        x.b = sc.nextDouble();
+        x.c = sc.nextDouble();
 
-         System.out.println("Enter the measures of triangle Y:");
-         y.a = sc.nextDouble();
-         y.b = sc.nextDouble();
-         y.c = sc.nextDouble();
+        System.out.println("Enter the measures of triangle Y:");
+        y.a = sc.nextDouble();
+        y.b = sc.nextDouble();
+        y.c = sc.nextDouble();
 
         double p = (x.a + x.b + x.c) / 2.0;
         double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
@@ -36,8 +36,8 @@ public class App {
         } else {
             System.out.println("Larger area: Y");
 
-            sc.close();
         }
+        sc.close();
 
     }
 }
